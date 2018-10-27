@@ -3,6 +3,8 @@ import logo from '../logo.svg';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css'
 
+import About from '../shared/components/About'
+
 class App extends Component {
   render() {
     return (
@@ -12,8 +14,8 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
+          <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i className="material-icons right">send</i>
   </button>
           <a
             className="App-link"
@@ -24,6 +26,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <About />
       </div>
     );
   }
