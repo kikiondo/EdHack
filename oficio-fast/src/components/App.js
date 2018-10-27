@@ -6,6 +6,8 @@ import Registro from './Registro'
 
 import 'materialize-css/dist/css/materialize.min.css'
 
+import About from '../shared/components/About'
+
 class App extends Component {
   render() {
     return (
@@ -16,8 +18,13 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+
+    <i className="material-icons right">send</i>
+  </button>
+
             <i className="material-icons right">send</i>
           </button>
+
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -27,7 +34,11 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        <About />
+
         <Login/>
+
       </div>
     );
   }
