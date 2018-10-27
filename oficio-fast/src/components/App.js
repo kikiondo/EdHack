@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-
-
+import 'materialize-css/dist/css/materialize.min.css'
 import Login from './Login/index'
 import Registro from './Registro'
-
-import 'materialize-css/dist/css/materialize.min.css'
+import About from '../shared/components/About'
 
 class App extends Component {
   render() {
@@ -13,7 +11,7 @@ class App extends Component {
       <div>
         <Registro />
       </div>
-    );
+    )
   }
 }
 
