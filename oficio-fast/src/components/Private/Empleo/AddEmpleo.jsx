@@ -42,7 +42,7 @@ const AddEmpleo = () => (
           <Link to="/registro" className="blue darken-2 btn buttons-login">Crear Empleo</Link>
         </div>
         <div className="button-regresar">
-          <Link to="/" className="btn-regresar blue darken-2 btn-small">Volver</Link>
+          <Link to="/empleos" className="btn-regresar blue darken-2 btn-small">Volver</Link>
         </div>
       </form>
 
