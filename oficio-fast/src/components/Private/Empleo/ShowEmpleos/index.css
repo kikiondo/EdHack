@@ -8,6 +8,12 @@
 
 .Link {
   margin: 1.5em;
+  margin-top: 0%;
+}
+
+.p-aviso {
+  margin-bottom: 0%;
+  font-weight: bold;
 }
 
 /* .sc-bdVaJa{

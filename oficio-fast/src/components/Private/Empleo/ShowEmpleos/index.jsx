@@ -51,6 +51,7 @@ class ShowEmpleo extends Component {
             }
           </tbody>
         </table>
+        <p className="p-aviso">Sección en proceso, espera próximamente nuevos empleos y actualizaciones, gracias c:</p>
         <Link to="/empleos" className="Link btn waves-effect blue darken-2">Regresar</Link>
       </div>
     )
