@@ -1,7 +1,6 @@
 import { firebaseAuth } from '../../data/'
 import { firebaseApp } from '../../data/'
 
-
 const auth = (email, password, user) => (
   firebaseAuth()
     .createUserWithEmailAndPassword(email, password)
