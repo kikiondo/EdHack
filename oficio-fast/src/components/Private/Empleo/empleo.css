@@ -1,6 +1,10 @@
-.Container-Empleo {
+.container-papa {
   height: 100vh;
   width: 100vw;
+  background: lightblue;
+}
+
+.Container-Empleo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,6 +33,10 @@
 
 @media screen and (min-width: 500px) {
   .Container-Empleo {
+    background: #f8bbd0;
+    justify-content: space-around;
+  }
+  .container-papa {
     background: #f8bbd0;
     justify-content: space-around;
   }
