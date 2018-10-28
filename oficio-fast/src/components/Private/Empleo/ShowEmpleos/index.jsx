@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { createEmpleoInDB } from '../../../helpers/'
 import myData from '../../../../data/empleos.json';
-
+import uid from 'uid'
 class ShowEmpleo extends Component {
   constructor()
   {
@@ -27,15 +26,23 @@ class ShowEmpleo extends Component {
 
   render() {
     return(
-     <div>
-       {
-        //console.log(`hola soy el estado ${this.state.empleos}`)
-        this.state.empleos.map(empleo => 
-          <div>
-            <span>{empleo.item}</span>
-          </div>
-        )
-       }
+     <div className="container">
+      <table className="striped">
+        <thead>
+          <tr>
+              <th>Empleos más solicitados!!!</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            this.state.empleos.map(empleo =>
+              <tr key={uid(2)}> 
+                <td>{empleo.item}</td>
+              </tr>
+            )
+          }
+        </tbody>
+      </table>
      </div>
     )
   }
