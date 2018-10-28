@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
-
 import './empleo.css'
 import KawaiiAnimation from "./KawaiiAnimation"
+import Information from '../Information'
 
 import Navbar from '../../../shared/components/Nav'
 
@@ -14,9 +14,13 @@ class Empleo extends Component{
 
   render() {
     return(
+    <Fragment>
       <div className="container-papa">
         <Navbar className="navegacion" />
         <div className="Container-Empleo">
+
+      <div className="Container-Empleo">
+
           <h3 className="Empleo-Title">¿Qué necesitas?</h3>
           <div className="Container-Kawaii">
             <KawaiiAnimation />
@@ -26,8 +30,14 @@ class Empleo extends Component{
             <Link to="/buscarempleo" className="link btn waves-effect blue darken-2">Buscar Empleo</Link>
             <Link to="/crearempleo" className="link btn waves-effect blue darken-2">Crear Empleo</Link>
           </div>
+
         </div>
       </div>
+
+      </div>
+      <Information />
+     </Fragment>
+
     )
   }
 }

@@ -24,6 +24,7 @@ export default class Login extends Component {
     console.log(user)
     this.setState ({email: user.email})
     login(user.email, user.password)
+      .then(r => this.props.history.push('/empleos'))
       .catch(err => this.setState(this.setMessage(`Usuario o Password son INCORRECTOS`)))
   }
 

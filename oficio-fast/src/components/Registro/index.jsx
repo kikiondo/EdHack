@@ -26,7 +26,8 @@ class Registro extends Component {
       school: form.school.value
     }
     auth( user.email, user.password, user)
-      .catch( err => this.setState( this.setMessage( `Error: ${err.message}` ) ) )
+      .then(r => this.props.history.push('/empleos'))
+      .catch( err => this.setState( this.setMessage( `Error: ${err.message}`)))
 
     this.setState({user})
     form.reset()

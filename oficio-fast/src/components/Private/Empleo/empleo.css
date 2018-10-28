@@ -28,6 +28,7 @@
 
 .Container-Kawaii > p {
   padding: 1.5em;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 500px) {
