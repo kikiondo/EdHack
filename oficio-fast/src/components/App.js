@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Login from './Login/'
+
 
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css'
-import Login from './Login/index'
+import Login from './Login/'
 import Registro from './Registro'
 import About from '../shared/components/About'
 
@@ -13,6 +13,8 @@ class App extends Component {
     return (
       <div>
         <Registro />
+        
+        <Login/>
       </div>
     )
   }
