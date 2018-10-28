@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import logo from '../../../src/shared/media/oficiofast-logo.png'
 
@@ -21,7 +22,7 @@ const Form = ({onLogin, onError, onResetPassword}) => (
           <div className="u-error">
             <p>
               Error:&nbsp;&nbsp;{onError.loginMessage}&nbsp;
-              <a href="#" onClick={onResetPassword} className="alert-link">¿Olvidaste tu contraseña?</a>
+              <Link to="/" onClick={onResetPassword} className="alert-link">¿Olvidaste tu contraseña?</Link>
             </p>
           </div>
       }            
