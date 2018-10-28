@@ -1,0 +1,15 @@
+.Container-BuscarEmpleo {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.Link {
+  margin: 1.5em;
+}
+
+/* .sc-bdVaJa{
+  margin-top: 1rem;
+} */
