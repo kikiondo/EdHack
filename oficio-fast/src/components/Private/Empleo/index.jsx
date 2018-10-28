@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import './empleo.css'
 import KawaiiAnimation from "./KawaiiAnimation"
-import Information from '../Information'
 import Sabias from '../../../shared/components/Sabias'
 
 import Navbar from '../../../shared/components/Nav'
