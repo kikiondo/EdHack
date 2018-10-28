@@ -21,6 +21,20 @@ const createUserInDB = (user) => {
   })
   console(usersRef)
 }
+
+const createEmpleoInDB = (empleo) => {
+  let empleoRef = firebaseApp.database().ref().child('empleos')
+  empleoRef.push({
+    nombre: empleo.nombre,
+    empresa: empleo.empresa,
+    escolaridad: empleo.escolaridad,
+    pais: empleo.pais,
+    ciudad: empleo.ciudad,
+    direccion: empleo.direccion,
+    telefono: empleo.telefono
+  })
+}
+
 const login = (email, password) => firebaseAuth().signInWithEmailAndPassword(email, password)
 
 const logout = () => firebaseAuth().signOut()
@@ -33,4 +47,5 @@ export {
   login,
   logout,
   resetPassword,
+  createEmpleoInDB
 }
