@@ -1,12 +1,14 @@
 import React from 'react'
 
+import logo from '../../../src/shared/media/oficiofast-logo.png'
+
 const Form = ({onLogin, onError, onResetPassword}) => (
   <div className='login-container'>
   <div className='container'>
     <div className='img-container'>
-      <img src="" alt=""/>
+    <img src={logo} className="logo-about" alt="logo" />
     </div>
-    <h1 className='text'>Bienvenido a OficioFast</h1>
+    <h2 className='text'>Bienvenido a OficioFast</h2>
     <form onSubmit={onLogin} >
       <div className="input-field col s6">
         <input type="text" name="email" className="validate" id="email" placeholder="Correo" />
