@@ -31,6 +31,10 @@
   font-weight: bold;
 }
 
+.p-empleo {
+  color: black;
+}
+
 @media screen and (min-width: 500px) {
   .Container-Empleo {
     background: #f8bbd0;

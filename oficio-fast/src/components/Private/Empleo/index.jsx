@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './empleo.css'
 import KawaiiAnimation from "./KawaiiAnimation"
 import Information from '../Information'
+import Sabias from '../../../shared/components/Sabias'
 
 import Navbar from '../../../shared/components/Nav'
 
@@ -24,7 +25,7 @@ class Empleo extends Component{
           <h3 className="Empleo-Title">¿Qué necesitas?</h3>
           <div className="Container-Kawaii">
             <KawaiiAnimation />
-            <p>Busca nuevas oportunidades y explota tus talentos o ayúdanos a cambiar la vida de las personas.</p>
+            <p className="p-empleo">Busca nuevas oportunidades y explota tus talentos o ayúdanos a cambiar la vida de las personas.</p>
           </div>
           <div className="Container-Buttons container">
             <Link to="/buscarempleo" className="link btn waves-effect blue darken-2">Buscar Empleo</Link>
@@ -35,7 +36,7 @@ class Empleo extends Component{
       </div>
 
       </div>
-      <Information />
+      <Sabias />
      </Fragment>
 
     )
