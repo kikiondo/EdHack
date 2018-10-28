@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <div>
         <Registro />
+        <About />
       </div>
     )
   }

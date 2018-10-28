@@ -14,7 +14,7 @@ const About = () => {
           a personas que no cuentan con tantos estudios y se quieren superar.
         </h5>
         <div className="button-about">
-          <a className="waves-effect waves-light btn">Unirse a OficioFast</a>
+          <a className="waves-effect blue darken-2 btn">Unirse a OficioFast</a>
         </div>
       </div>
     </div>
