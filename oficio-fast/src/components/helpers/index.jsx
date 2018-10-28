@@ -1,6 +1,5 @@
-import { ref, firebaseAuth } from '../../data/'
+import { firebaseAuth } from '../../data/'
 import { firebaseApp } from '../../data/'
-import uid from 'uid'
 
 const auth = (email, password, user) => (
   firebaseAuth()
