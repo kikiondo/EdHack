@@ -2,6 +2,7 @@ import React from 'react'
 
 import logo from '../media/oficiofast-logo.png'
 import './about.css'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
           a personas que no cuentan con tantos estudios y se quieren superar.
         </h5>
         <div className="button-about">
-          <a className="waves-effect blue darken-2 btn">Unirse a OficioFast</a>
+          <Link to="/registro" className="waves-effect blue darken-2 btn">Unirse a OficioFast</Link>
         </div>
       </div>
     </div>

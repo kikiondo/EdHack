@@ -28,7 +28,7 @@ const Form = ({onLogin, onError, onResetPassword}) => (
       }            
       <div className="buttons-container">
         <input type="submit" value="Iniciar Sesión" className="blue darken-2 btn buttons-login"/>
-        <input type="submit" value="Registrarse"  className="blue darken-2 btn buttons-login"/>
+        <Link to="/registro" className="blue darken-2 btn buttons-login">Registrarse</Link>
       </div>
     </form>
   </div>
