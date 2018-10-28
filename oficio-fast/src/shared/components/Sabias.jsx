@@ -1,8 +1,6 @@
 import React from 'react'
-
 import logo from '../media/oficiofast-logo.png'
 import './sabias.css'
-import { Link } from 'react-router-dom'
 
 const Sabias = () => (
   <div className="container-sabias">
