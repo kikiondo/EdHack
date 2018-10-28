@@ -2,6 +2,7 @@
   height: 100vh;
   background-image: url("../media/img-about-blue.jpg");
   background-size: cover;
+  text-align: center;
 }
 
 .logo-about {
