@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-
-import AddEmpleo from './AddEmpleo'
+import { Link } from 'react-router-dom'
 
 import './empleo.css'
-import KawaiiAnimation from "./KawaiiAnimation";
+import KawaiiAnimation from "./KawaiiAnimation"
 
 class Empleo extends Component{
   constructor(){
@@ -21,8 +20,8 @@ class Empleo extends Component{
           <p>Busca nuevas oportunidades y explota tus talentos o ayúdanos a cambiar la vida de las personas.</p>
         </div>
         <div className="Container-Buttons container">
-          <button className="btn waves-effect blue darken-2">Buscar empleo</button>
-          <button className="btn waves-effect blue darken-2">Publicar empleo</button>
+          <Link to="/buscarempleo" className="link btn waves-effect blue darken-2">Buscar Empleo</Link>
+          <Link to="/crearempleo" className="link btn waves-effect blue darken-2">Crear Empleo</Link>
         </div>
      </div>
 
