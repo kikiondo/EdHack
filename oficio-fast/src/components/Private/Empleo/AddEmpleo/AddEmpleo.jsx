@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
+import logo from '../../../../shared/media/empleo.png'
+import '../empleo.css'
 
-import logo from '../../../shared/media/empleo.png'
-import './addEmpleo.css'
-
-const AddEmpleo = () => (
+const AddEmpleo = ({addEmpleo}) => (
   <div className="addEmpleo-container">
     <div className="container">
 
@@ -13,7 +12,7 @@ const AddEmpleo = () => (
       </div>
       <h2 className='text'>Crear Empleo</h2>
 
-      <form >
+      <form onSubmit={addEmpleo}>
         <div className="input-field col s6">
           <input type="text" name="nombre" className="validate" id="nombre" placeholder="Nombre del empleo" />
         </div>
@@ -39,10 +38,10 @@ const AddEmpleo = () => (
           <input type="text" name="telefono" className="validate" id="telefono" placeholder="Teléfono" />
         </div>           
         <div className="buttons-container">
-          <Link to="/registro" className="blue darken-2 btn buttons-login">Crear Empleo</Link>
+          <input type="submit" to="/buscarempleo"  className="blue darken-2 btn buttons-login" value="Crear Empleo"/>
         </div>
         <div className="button-regresar">
-          <Link to="/empleos" className="btn-regresar blue darken-2 btn-small">Volver</Link>
+          <Link to="/empleos"  className="btn-regresar blue darken-2 btn-small">Volver</Link>
         </div>
       </form>
 
