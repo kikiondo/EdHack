@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import Form from './Form'
 import { auth } from '../helpers/'
 import './styles.css'
-import logo from '../../shared/media/senorlimon.png'
 
 
 class Registro extends Component {
