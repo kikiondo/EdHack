@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AddEmpleo from './AddEmpleo'
 
 class Empleo extends Component{
   constructor(){
@@ -8,7 +9,10 @@ class Empleo extends Component{
 
   render() {
     return(
-      <h1>Sección de empleo</h1>
+      <div>
+        <AddEmpleo />
+      </div>
+      
     )
   }
 }
