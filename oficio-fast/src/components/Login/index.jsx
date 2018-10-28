@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './style.css'
 import Form from './Form'
 import { login, resetPassword } from '../helpers/'
+import About from '../../shared/components/About'
 
 export default class Login extends Component {
   constructor(...props) {
@@ -44,6 +45,7 @@ export default class Login extends Component {
           onError={this.state}
           onResetPassword={this.onResetPassword}
         />
+        <About />
      </div>
     )
   }

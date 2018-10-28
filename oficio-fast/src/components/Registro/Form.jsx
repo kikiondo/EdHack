@@ -1,6 +1,7 @@
 import React from 'react'
 import uid from 'uid'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 const Formulario = ({onAddCourse}) => (
 
@@ -21,7 +22,7 @@ const Formulario = ({onAddCourse}) => (
       <label htmlFor="School">Escolaridad</label>
       <input name="school" placeholder="Escolaridad" id="School" type="text" className="validate" required/>
 
-      <button className="btn waves-effect waves-light" type="submit" name="action">Regresar</button>
+      <Link to="/" className="btn waves-effect waves-light" name="action">Regresar</Link>
       <button className="btn waves-effect waves-light" type="submit" name="action">Registrarte</button>
     </form>
   </div>
