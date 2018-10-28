@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+
+import AddEmpleo from './AddEmpleo'
+
 import './empleo.css'
 import KawaiiAnimation from "./KawaiiAnimation";
 
@@ -10,6 +13,7 @@ class Empleo extends Component{
 
   render() {
     return(
+      
      <div className="Container-Empleo">
         <h3 className="Empleo-Title">¿Qué necesitas?</h3>
         <div className="Container-Kawaii">
@@ -21,6 +25,7 @@ class Empleo extends Component{
           <button className="btn waves-effect blue darken-2">Publicar empleo</button>
         </div>
      </div>
+
     )
   }
 }
