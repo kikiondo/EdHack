@@ -1,29 +1,50 @@
 import React, { Component } from 'react'
 import './style.css'
+import Form from './Form'
+import { login, resetPassword } from '../helpers/'
 
 export default class Login extends Component {
+  constructor(...props) {
+    super(...props)
+
+    this.state = { loginMessage: null, email: '' }
+    this.handleOnSubmit = this.handleOnSubmit.bind(this)
+    this.setMessage = this.setMessage.bind(this)
+    this.onResetPassword = this.onResetPassword.bind(this)
+  }
+
+  handleOnSubmit(e) {
+    e.preventDefault()
+    let form = e.target,
+    user = { 
+      email: form.email.value,
+      password: form.password.value
+    } 
+    console.log(user)
+    this.setState ({email: user.email})
+    login(user.email, user.password)
+      .catch(err => this.setState(this.setMessage(`Usuario o Password son INCORRECTOS`)))
+  }
+
+  setMessage(err) {
+    return { loginMessage: err }
+  }
+
+  onResetPassword() {
+    resetPassword(this.state.email)
+      .then( () => this.setState( this.setMessage(`Se ha enviado un correo electronico a ${this.state.email} para reestablecer tu contraseña.`)) )
+      .catch( err => this.setState( this.setMessage(`El email ${this.state.email} no se encuentra registrado`)))
+  }
+
   render () {
     return (
-      <div className='login-container'>
-          <div className='container'>
-            <div className='img-container'>
-              <img src="" alt=""/>
-            </div>
-            <h1 className='teal-text'>Bienvenido a OfficeFast</h1>
-            <form action="" >
-              <div className="input-field col s6">
-                <input type="text" name="correo" className="validate" id="correo" placeholder="Correo"/>
-              </div>
-              <div className="input-field col s6">
-                <input type="text" name="password" className="validate" id="password" placeholder="Contraseña" />
-              </div>            
-              <div className="buttons-container">
-                <input type="submit" value="Iniciar Sesión" className="btn buttons-login"/>
-                <input type="submit" value="Registrarse"  className="btn buttons-login"/>
-              </div>
-            </form>
-          </div>
-      </div> 
+     <div className="">
+        <Form
+          onLogin={this.handleOnSubmit}
+          onError={this.state}
+          onResetPassword={this.onResetPassword}
+        />
+     </div>
     )
   }
 }
